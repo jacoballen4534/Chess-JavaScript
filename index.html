@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chess</title>
+</head>
+<body onload="SetUp()">
+<link rel="stylesheet" href="style.css">
+<table id="RenderBoard" border="1"></table>
+
+<span id="PlayersTurn"></span><br>
+<select id="Col" onchange="NewBoard.ShowRows()"></select>
+
+<select id="Row"></select>
+
+<input id="CheckValid" type="submit" onclick="CheckValidPiece()">
+
+<select id="PossableMoveList"></select>
+<input id="SelectMove" type="submit" onclick="PlayMove()">
+
+
+<script src="pieces.js"></script>
+<script src="playing.js"></script>
+<script src="board.js"></script>
+<script src="tile.js"></script>
+<script src="index.js"></script>
+
+
+</body>
+</html>
